@@ -1,0 +1,192 @@
+/* Initial settings */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.clear-fix {
+    float: none;
+    clear: both;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background: url('../img/Goya.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#global {
+    width: 70%;
+    background-color:rgba(204, 202, 197, 0.74);
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px 60px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+/* Logo design */
+
+.logo {
+    padding: 10px 30px;
+    background-color: rgb(197, 51, 51);
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    border: 3px solid #555; 
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    max-width: 400px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+/* Navbar menu */
+
+.navbar-menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: rgb(230, 227, 227);
+    margin: 20px 30px;
+    padding: 0px 20px;
+}
+.navbar-menu ul {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(24, 24, 24);    
+}
+
+.navbar-menu ul li {
+    padding: 15px 10px;
+}
+
+.navbar-menu ul li:hover {
+    background: rgb(197, 51, 51);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    color: whitesmoke;
+}
+
+.navbar-menu ul li {
+    transition: all 300ms;
+
+}
+
+/* Articles styles */
+.main-content--post {
+    margin-top: 10px;
+    padding: 0px 40px;
+    width: 70%;
+    float: left;
+}
+
+.main-content--post h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.6rem;
+    color: #333;
+}
+
+.main-content--post span{
+    color: rgb(100, 100, 100);
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.main-content--post p {
+    color: rgb(24, 24, 24);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.button-more {
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: rgb(197, 51, 51);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+/* Barra lateral  */
+.sidebar {
+    font-family: Helvetica, sans-serif ;
+    width: 25%;
+    float: right;
+    margin-right: 40px;
+}
+
+.sidebar .sidebar-item h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #333;
+}
+
+.sidebar-item img {
+    width: 100%;
+}
+
+.sidebar-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.sidebar-item label input {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.sidebar-item .btn-submit {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 70%;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 4rem;
+}
