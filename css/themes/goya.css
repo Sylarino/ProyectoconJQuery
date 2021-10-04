@@ -1,0 +1,18 @@
+body {
+    background: url('../../img/Goya.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    background-color: rgb(197, 51, 51);
+}
+
+.navbar-menu ul li:hover {
+    background: rgb(197, 51, 51);
+}
+
+.button-more {
+    background-color: rgb(197, 51, 51);
+}

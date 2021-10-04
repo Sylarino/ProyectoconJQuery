@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Project</title>
+    
+    <!-- Personal Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/themes/goya.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+    <!-- Cabezera -->
+    <div class="div-selector--theme">
+        <div name="theme" class="goya-theme">
+
+        </div>
+        <div name="theme" class="remedios-theme">
+
+        </div>
+        <div name="theme" class="bosco-theme">
+
+        </div>
+    </div>
+    <section id="global">
+        <header>
+            <div class="logo">
+                <h2>J-Art</h2>
+            </div>
+            <nav class="navbar-menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clock.html">Reloj Artistico</a></li>
+                    <li><a href="about-me.html">Sobre nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main-content clear-fix">
+            <div class="clock-content">
+
+            </div>
+
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-item">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/Spring.jpg" alt="La Primavera de Botticelli">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <h4><span>Registrate!</span></h4>
+                    <form id="login-form" action="">
+                        <label for="name">
+                            Nombres: <br>
+                            <input type="text" id="form-name">
+                            <br>
+                        </label>
+                        <label for="email">
+                            Correo: <br>
+                            <input type="email" id="form-email">
+                            <br>
+                        </label>
+                        <label for="password">
+                            Contraseña: <br>
+                            <input type="password" id="form-password">
+                            <br>
+                        </label>
+                        <input class="btn-submit" value="Enviar" type="submit">
+                    </form>
+                </div>
+            </aside>
+
+            <div class="clear-fix"></div>
+        </section>
+
+    </section>    
+    <footer>
+        Práctica de Javascript y JQuery &copy;
+
+        <a href="#" class="up-page">Subir</a>
+    </footer>
+</body>
+</html>

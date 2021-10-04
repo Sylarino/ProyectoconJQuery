@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Project</title>
+    
+    <!-- Personal Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/themes/goya.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+    <!-- Cabezera -->
+    <div class="div-selector--theme">
+        <div name="theme" class="goya-theme">
+
+        </div>
+        <div name="theme" class="remedios-theme">
+
+        </div>
+        <div name="theme" class="bosco-theme">
+
+        </div>
+    </div>
+    <section id="global">
+        <header>
+            <div class="logo">
+                <h2>J-Art</h2>
+            </div>
+            <nav class="navbar-menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clock.html">Reloj Artistico</a></li>
+                    <li><a href="about-me.html">Sobre nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main-content clear-fix">
+            <div class="contact-content">
+                <h2>
+                    Contacto
+                </h2>
+                <form action="" method="POST" id="contact-form">
+                    <label for="name">Nombre</label>
+                    <input data-validation="alphanumeric" type="text" name="name">
+
+                    <label for="last-name">Apellido</label>
+                    <input data-validation="alphanumeric" type="text" name="last-name">
+
+                    <label for="email">Correo</label>
+                    <input data-validation="email" type="email" name="email">
+
+                    <label for="gender">Genero</label>
+                    <select name="gender" id="" data-validation="required">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="">Femenino</option>
+                        <option value="">Masculino</option>
+                        <option value="">Otro</option>
+                    </select>
+
+                    <label for="birth-date">Fecha de Nacimiento</label>
+                    <input name="date" data-validation="date" data-validation-format="dd-mm-yyyy" type="date">
+
+                    <label for="age">Edad</label>
+                    <input data-validation="number" type="number">
+
+                    <input type="submit" value="Registrar">
+                </form>
+            </div>
+
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-item">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/Spring.jpg" alt="La Primavera de Botticelli">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <h4><span>Registrate!</span></h4>
+                    <form id="login-form" action="">
+                        <label for="name">
+                            Nombres: <br>
+                            <input type="text" id="form-name">
+                            <br>
+                        </label>
+                        <label for="email">
+                            Correo: <br>
+                            <input type="email" id="form-email">
+                            <br>
+                        </label>
+                        <label for="password">
+                            Contraseña: <br>
+                            <input type="password" id="form-password">
+                            <br>
+                        </label>
+                        <input class="btn-submit" value="Enviar" type="submit">
+                    </form>
+                </div>
+            </aside>
+
+            <div class="clear-fix"></div>
+        </section>
+
+    </section>    
+    <footer>
+        Práctica de Javascript y JQuery &copy;
+
+        <a href="#" class="up-page">Subir</a>
+    </footer>
+</body>
+</html>

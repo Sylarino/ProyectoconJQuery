@@ -1,0 +1,18 @@
+body {
+    background: url('../../img/ElBosco.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    background-color: rgb(120, 214, 83);
+}
+
+.navbar-menu ul li:hover {
+    background: rgb(120, 214, 83);
+}
+
+.button-more {
+    background-color: rgb(120, 214, 83);
+}

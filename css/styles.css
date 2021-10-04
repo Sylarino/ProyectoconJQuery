@@ -17,7 +17,6 @@ html {
 }
 
 body {
-    background: url('../img/Goya.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -91,13 +90,13 @@ body {
 
 /* Articles styles */
 .main-content--post {
-    margin-top: 10px;
+    margin-top: 70px;
     padding: 0px 40px;
     width: 70%;
     float: left;
 }
 
-.main-content--post h2{
+h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.6rem;
     color: #333;
@@ -133,6 +132,7 @@ body {
 
 /* Barra lateral  */
 .sidebar {
+    margin-top: 50px;
     font-family: Helvetica, sans-serif ;
     width: 25%;
     float: right;
@@ -158,7 +158,9 @@ body {
     text-align: justify;
 }
 
-.sidebar-item label input {
+.sidebar-item label input,
+#contact-form input,
+#contact-form select {
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -189,4 +191,104 @@ footer {
     padding-right: 20px;
     margin-top: 50px;
     line-height: 4rem;
+}
+
+/* Slider */
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;
+}
+
+.bx-wrapper {
+    margin: 0px auto !important;
+}
+
+.bx-viewport img {
+    background-size: cover;
+}
+
+.div-selector--theme {
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 70px;
+    height: 170px;
+}
+
+/* Theme selector */
+.goya-theme,
+.bosco-theme,
+.remedios-theme {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.goya-theme {
+    background-image: url('../img/GoyaIcon.jpg');
+    background-size: cover;
+}
+
+.bosco-theme {
+    background-image: url('../img/BoscoIcon.jpg');
+    background-size: cover;
+}
+
+.remedios-theme {
+    background-image: url('../img/RemediosIcon.jpg');
+    background-size: cover;
+}
+
+.up-page {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+.accordion-content {
+    float: left;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.clock-content {
+    width: 30%;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    border: 5px dashed cornflowerblue;
+    font-size: 2.4rem;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+#contact-form {
+    float: left;
+    width: 40%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+}
+
+#contact-form label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+
+.help-block{
+    float: right;
+}
+
+.help-block,
+.form-error {
+    color: white;
+    background: rgb(240, 39, 39);
+    font-size: 1.4rem;
+    padding: 10px;
+    width: 65%;
 }

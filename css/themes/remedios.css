@@ -1,0 +1,18 @@
+body {
+    background: url('../../img/RemediosVaro.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    background-color: rgb(221, 139, 15);
+}
+
+.navbar-menu ul li:hover {
+    background: rgb(221, 139, 15);
+}
+
+.button-more {
+    background-color: rgb(221, 139, 15);
+}

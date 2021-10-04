@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Project</title>
+    
+    <!-- Personal Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/themes/goya.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Personal scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    
 </head>
 <body>
     <!-- Cabezera -->
+    <div class="div-selector--theme">
+        <div name="theme" class="goya-theme">
+
+        </div>
+        <div name="theme" class="remedios-theme">
+
+        </div>
+        <div name="theme" class="bosco-theme">
+
+        </div>
+    </div>
     <section id="global">
         <header>
             <div class="logo">
@@ -16,33 +45,25 @@
             </div>
             <nav class="navbar-menu" id="menu">
                 <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Reloj Artistico</a></li>
-                    <li><a>Sobre nosotros</a></li>
-                    <li><a>Contacto</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clock.html">Reloj Artistico</a></li>
+                    <li><a href="about-me.html">Sobre nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Slider -->
-        <div id="slider">
-
+        <div class="clear-fix" id="slider">
+            <div class="slider">
+                <div><img src="img/Beksinski.jpg" title="Beksinski"></div>
+                <div><img src="img/Dorothea.jpg" alt="Dorothea Carrington"></div>
+                <div><img src="img/Narciso.jpg" alt="Aleksandra Waliweska"></div>
+            </div>
         </div>
 
         <section id="main-content clear-fix">
             <div class="main-content--post" id="posts">
-                <article class="section-main-post">
-                    <h2>Titulo de Articulo</h2>
-                    <span>Fecha de Publicación</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a class="button-more" href="#">Leer más</a>
-                </article>
-
-                <article class="section-main-post">
-                    <h2>Titulo de Articulo</h2>
-                    <span>Fecha de Publicación</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a class="button-more" href="#">Leer más</a>
-                </article>
+                <!-- Articulos añadidos dinamicamente con JQuery -->
             </div>
 
             <aside class="sidebar" id="sidebar">
@@ -54,22 +75,24 @@
 
                 <div class="sidebar-item">
                     <h4><span>Registrate!</span></h4>
-                    <label for="name">
-                        Nombres: <br>
-                        <input type="text">
-                        <br>
-                    </label>
-                    <label for="email">
-                        Correo: <br>
-                        <input type="email">
-                        <br>
-                    </label>
-                    <label for="password">
-                        Contraseña: <br>
-                        <input type="password">
-                        <br>
-                    </label>
-                    <input class="btn-submit" value="Enviar" type="submit">
+                    <form id="login-form" action="">
+                        <label for="name">
+                            Nombres: <br>
+                            <input type="text" id="form-name">
+                            <br>
+                        </label>
+                        <label for="email">
+                            Correo: <br>
+                            <input type="email" id="form-email">
+                            <br>
+                        </label>
+                        <label for="password">
+                            Contraseña: <br>
+                            <input type="password" id="form-password">
+                            <br>
+                        </label>
+                        <input class="btn-submit" value="Enviar" type="submit">
+                    </form>
                 </div>
             </aside>
 
@@ -79,6 +102,8 @@
     </section>    
     <footer>
         Práctica de Javascript y JQuery &copy;
+
+        <a href="#" class="up-page">Subir</a>
     </footer>
 </body>
 </html>
